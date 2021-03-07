@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,15 +11,21 @@
 		39C4956225F47A7E000B8328 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C4956125F47A7E000B8328 /* ContentView.swift */; };
 		39C4956425F47A83000B8328 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39C4956325F47A83000B8328 /* Assets.xcassets */; };
 		39C4956725F47A83000B8328 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39C4956625F47A83000B8328 /* Preview Assets.xcassets */; };
+		39C4957825F47C8B000B8328 /* crudOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C4957725F47C8B000B8328 /* crudOperations.swift */; };
+		B4EDCA208710102908B5AD2B /* Pods_RealmStorageDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E925D39BB66765EE53341E /* Pods_RealmStorageDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28E925D39BB66765EE53341E /* Pods_RealmStorageDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmStorageDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39C4955C25F47A7E000B8328 /* RealmStorageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmStorageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39C4955F25F47A7E000B8328 /* RealmStorageDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmStorageDemoApp.swift; sourceTree = "<group>"; };
 		39C4956125F47A7E000B8328 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		39C4956325F47A83000B8328 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39C4956625F47A83000B8328 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		39C4956825F47A83000B8328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39C4957725F47C8B000B8328 /* crudOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crudOperations.swift; sourceTree = "<group>"; };
+		B231B6F9DE86A41D6050D3FF /* Pods-RealmStorageDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmStorageDemo.release.xcconfig"; path = "Target Support Files/Pods-RealmStorageDemo/Pods-RealmStorageDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B2CE0D9E5DD17E60A273FC81 /* Pods-RealmStorageDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmStorageDemo.debug.xcconfig"; path = "Target Support Files/Pods-RealmStorageDemo/Pods-RealmStorageDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4EDCA208710102908B5AD2B /* Pods_RealmStorageDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D4A9CB4801FB529110AC484 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28E925D39BB66765EE53341E /* Pods_RealmStorageDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		39C4955325F47A7E000B8328 = {
 			isa = PBXGroup;
 			children = (
 				39C4955E25F47A7E000B8328 /* RealmStorageDemo */,
 				39C4955D25F47A7E000B8328 /* Products */,
+				DF68224CC6C6291151512320 /* Pods */,
+				1D4A9CB4801FB529110AC484 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +71,7 @@
 			children = (
 				39C4955F25F47A7E000B8328 /* RealmStorageDemoApp.swift */,
 				39C4956125F47A7E000B8328 /* ContentView.swift */,
+				39C4957725F47C8B000B8328 /* crudOperations.swift */,
 				39C4956325F47A83000B8328 /* Assets.xcassets */,
 				39C4956825F47A83000B8328 /* Info.plist */,
 				39C4956525F47A83000B8328 /* Preview Content */,
@@ -69,6 +87,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		DF68224CC6C6291151512320 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2CE0D9E5DD17E60A273FC81 /* Pods-RealmStorageDemo.debug.xcconfig */,
+				B231B6F9DE86A41D6050D3FF /* Pods-RealmStorageDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +103,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39C4956B25F47A83000B8328 /* Build configuration list for PBXNativeTarget "RealmStorageDemo" */;
 			buildPhases = (
+				BBB3E815A7DFC4572E771087 /* [CP] Check Pods Manifest.lock */,
 				39C4955825F47A7E000B8328 /* Sources */,
 				39C4955925F47A7E000B8328 /* Frameworks */,
 				39C4955A25F47A7E000B8328 /* Resources */,
+				F8161A426BB1B63A25DCB556 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +162,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BBB3E815A7DFC4572E771087 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RealmStorageDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8161A426BB1B63A25DCB556 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealmStorageDemo/Pods-RealmStorageDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealmStorageDemo/Pods-RealmStorageDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RealmStorageDemo/Pods-RealmStorageDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		39C4955825F47A7E000B8328 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				39C4956225F47A7E000B8328 /* ContentView.swift in Sources */,
+				39C4957825F47C8B000B8328 /* crudOperations.swift in Sources */,
 				39C4956025F47A7E000B8328 /* RealmStorageDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +336,7 @@
 		};
 		39C4956C25F47A83000B8328 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2CE0D9E5DD17E60A273FC81 /* Pods-RealmStorageDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +359,7 @@
 		};
 		39C4956D25F47A83000B8328 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B231B6F9DE86A41D6050D3FF /* Pods-RealmStorageDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
